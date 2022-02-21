@@ -16,17 +16,40 @@
     <header>
       <nav>
         <button data-kategori="alle" class="valgt">ALLE BYDELENE test</button>
-        <button data-kategori="forretter">NØRREBRO</button>
-        <button data-kategori="hovedretter">VESTERBRO</button>
-        <button data-kategori="sideorders">ØSTERBRO</button>
-        <button data-kategori="desserter">FREDERIKSBERG</button>
-        <button data-kategori="drikkevarer">INDRE BY</button>
+        <button data-kategori="norrebro">NØRREBRO</button>
+        <button data-kategori="vesterbro">VESTERBRO</button>
+        <button data-kategori="osterbro">ØSTERBRO</button>
+        <button data-kategori="frederiksberg">FREDERIKSBERG</button>
+        <button data-kategori="indreby">INDRE BY</button>
       </nav>
     </header>
     <h1>KNOW YOUR CITY</h1>
     <h2>KØBENHAVN</h2>
 
     <img src="/images/ikoner/splashbillede.svg" alt="splashbillede" />
+
+    <section class="container"></section>
+
+    <aside id="modal">
+      <article class="grid-menu">
+        <img src="" alt="" class="images" />
+        <div class="info">
+          <h2 class="navn"></h2>
+          <p class="paragraf"></p>
+          <p class="adresse"></p>
+        </div>
+      </article>
+    </aside>
+
+    <template>
+      <article>
+        <img src="" alt="" />
+
+        <h2 class="navn"></h2>
+        <p class="paragraf"></p>
+        <p class="adresse"></p>
+      </article>
+    </template>
 
     <script src="js.js"></script>
   </body>

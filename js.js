@@ -2,47 +2,52 @@ document.addEventListener("DOMContentLoaded", start);
 
 let modal = document.querySelector("#modal");
 // Globale variabler
-let json;
+let attractions;
 let filter = "alle";
 
-const url = "https://t7passionsopgave-bbad.restdb.io/rest/attractions";
-let attractions;
-const filterknapper = document.querySelectorAll("button");
-const options = {
-  headers: {
-    "x-apikey": "620f892934fd6215658587cf",
-  },
-};
-
 function start() {
+  console.log("Site startet");
+
+  async function hentData(url) {
+    const resultat = await fetch(url, options);
+    console.log("resultat", resultat);
+    retter = await resultat.json();
+    visByer();
+  }
+
+  const url = "https://t7passionsopgave-bbad.restdb.io/rest/attractions";
+  const options = {
+    headers: {
+      "x-apikey": "620f892934fd6215658587cf",
+    },
+  };
+
+  const filterknapper = document.querySelectorAll("button");
   filterknapper.forEach((knap) => {
-    knap.addEventListener("click", setFilter);
+    knap.addEventListener("click", filtrerByer);
   });
-  hentData();
+  hentData(url);
 }
 
-function setFilter() {
+function filtrerByer() {
+  console.log(this);
   filter = this.dataset.kategori; // Sætter variblen til det der er valgt
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
   // document.querySelector("h2").textContent = this.textContent;
 
-  vis();
+  visByer();
+
+  header.textContent = this.textContent;
 }
 
-async function hentData() {
-  const respons = await fetch(url, options);
-  attractions = await respons.json();
-  vis();
-}
-
-function vis() {
-  console.log(attractions);
+function visByer() {
+  console.log("Byer loaded");
 
   // Forbindelse til HTML elementer
+  const container = document.querySelector("section");
   const modal = document.querySelector("#modal");
   const temp = document.querySelector("template").content;
-  const container = document.querySelector("section");
 
   container.textContent = ""; // Ryd container
 
