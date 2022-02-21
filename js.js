@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", start);
+
 let modal = document.querySelector("#modal");
 // Globale variabler
 let json;
@@ -11,7 +13,6 @@ const options = {
     "x-apikey": "620f892934fd6215658587cf",
   },
 };
-document.addEventListener("DOMContentLoaded", start);
 
 function start() {
   filterknapper.forEach((knap) => {
