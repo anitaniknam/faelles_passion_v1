@@ -7,9 +7,10 @@
 :root {
   --clr-primary1: #962619;
   --clr-primary2: #0c0440;
-  --clr-secondary1: #f7ca8f;
+  --clr-secondary1: #a9d0da;
   --clr-secondary2: #ecebe2;
   --clr-secondary3: #71cca0;
+  --clr-accent: snow;
   --ff-h: "permanent marker", sans-serif;
   --ff-p: "poppins", sans-serif;
 }

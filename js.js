@@ -56,8 +56,8 @@ function filtrerByer() {
   const byKategoritekst = document.querySelector(".first_section_p");
   byKategoritekst.textContent = "";
   filter = this.dataset.kategori;
-  // document.querySelector(".valgt").classList.remove("valgt");
-  // this.classList.add("valgt");
+  document.querySelector(".valgt").classList.remove("valgt");
+  this.classList.add("valgt");
 
   visByer();
 
