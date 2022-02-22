@@ -23,23 +23,29 @@ img {
   display: block;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  background-color: var(--clr-primary2);
-}
+@media (min-width: 600px) {
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--clr-primary2);
+  }
 
-.banner {
-  position: sticky;
-  top: 0;
-  z-index: +1;
-  box-shadow: 0 2px 2px 0;
+  .banner {
+    position: sticky;
+    top: 0;
+    z-index: +1;
+    box-shadow: 0 2px 2px 0;
+  }
 }
 
 .toggle-btn {
   display: none;
   list-style: none;
+}
+
+nav.shown .menu_logo {
+  display: none;
 }
 
 @media (max-width: 600px) {
@@ -55,14 +61,22 @@ header nav ul {
 
   nav.shown {
     display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
-  }
-
-  .banner {
-    display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     background-color: var(--clr-primary2);
+  }
+
+  #banner_mobile {
+    display: flex;
+    background-color: var(--clr-primary2);
+  }
+
+  #banner_mobile img {
+    width: 50%;
+  }
+
+  #banner_mobile > * {
+    flex-basis: 100%;
   }
 
   nav ul {
