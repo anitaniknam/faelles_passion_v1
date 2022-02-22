@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", start);
 
-let modal = document.querySelector("#modal");
-// Globale variabler
-let attractions;
+let attraktioner;
 let filter = "alle";
+const header = document.querySelector(".h2_grid");
 
 function start() {
   console.log("Site startet");
@@ -11,30 +10,54 @@ function start() {
   async function hentData(url) {
     const resultat = await fetch(url, options);
     console.log("resultat", resultat);
-    retter = await resultat.json();
+    attraktioner = await resultat.json();
     visByer();
   }
 
   const url = "https://t7passionsopgave-bbad.restdb.io/rest/attractions";
   const options = {
-    headers: {
-      "x-apikey": "620f892934fd6215658587cf",
-    },
+    headers: { "x-apikey": "620f892934fd6215658587cf" },
   };
 
-  const filterknapper = document.querySelectorAll("button");
-  filterknapper.forEach((knap) => {
-    knap.addEventListener("click", filtrerByer);
-  });
+  const filterKnapper = document.querySelectorAll(".filtrer_by");
+  filterKnapper.forEach((knap) => knap.addEventListener("click", filtrerByer));
+
   hentData(url);
+
+  const btn = document.querySelector(".toggle-btn");
+  const nav = document.querySelector("nav");
+
+  //   /* Tilføj et klik-event til btn, der sætter toggleMenu-funktionen i gang */
+  btn.addEventListener("click", toggleMenu);
+  // // Lav en function, der hedder toggleMenu()
+  function toggleMenu() {
+    console.log("toggleMenu");
+    // 1. Toggle en klasse på nav vha. classList.toggle
+    // 2. Toggle en klasse, der hedder "shown"
+    nav.classList.toggle("shown");
+    // 1. Lav en variabel, der hedder menuShown
+    // 2. Den skal være lig med, om nav-variablen indeholder klassen "shown" vha. classList.contains("")
+    let menuShown = nav.classList.contains("shown");
+    // 1. Lav en if/else sætning => if (...) {...} else {...}
+    // 2. Spørg om menu i if-sætningen => if (menu)
+    if (menuShown) {
+      // hvis nav har klassen "shown", sæt da btn.textContent til "Luk"
+      btn.textContent = "Luk";
+    } else {
+      // hvis IKKE nav har klassen "shown", sæt da btn.textContent til "Menu"
+      btn.textContent = "Menu";
+    }
+  }
 }
 
 function filtrerByer() {
   console.log(this);
-  filter = this.dataset.kategori; // Sætter variblen til det der er valgt
-  document.querySelector(".valgt").classList.remove("valgt");
-  this.classList.add("valgt");
-  // document.querySelector("h2").textContent = this.textContent;
+
+  const byKategoritekst = document.querySelector(".first_section_p");
+  byKategoritekst.textContent = "";
+  filter = this.dataset.kategori;
+  // document.querySelector(".valgt").classList.remove("valgt");
+  // this.classList.add("valgt");
 
   visByer();
 
@@ -44,37 +67,34 @@ function filtrerByer() {
 function visByer() {
   console.log("Byer loaded");
 
-  // Forbindelse til HTML elementer
-  const container = document.querySelector("section");
-  const modal = document.querySelector("#modal");
-  const temp = document.querySelector("template").content;
+  const container = document.querySelector("#second_section");
+  const byTemplate = document.querySelector("#template_byer");
+  container.textContent = "";
 
-  container.textContent = ""; // Ryd container
-
-  container.innerHTML = "";
-  attractions.forEach((attractions) => {
-    if ((filter = attractions.kategori || filter == "alle")) {
-      const klon = temp.cloneNode(true);
-      klon.querySelector("img").src = "images/" + attractions.billede;
-      klon.querySelector("h2").textContent = `${attractions.navne}`;
-
-      klon.querySelector(".adresse").textContent = `${attractions.adresse}`;
-      klon.querySelector(".paragraf").textContent = attractions.paragraf;
+  attraktioner.forEach((attractions) => {
+    if (filter == attractions.kategori || filter == "alle") {
+      const klon = byTemplate.cloneNode(true).content;
+      klon.querySelector(".template_bynavn").textContent = attractions.navne;
+      klon.querySelector(".template_img").src = "images/" + attractions.billede;
       klon
-        .querySelector("article")
-        .addEventListener("click", () => visDetaljer(attractions));
+        .querySelector(".template_article")
+        .addEventListener("click", () => visBy(attractions));
       container.appendChild(klon);
     }
   });
 }
 
-function visDetaljer(attractions) {
+function visBy(attractions) {
+  // const modal = document.querySelector("#modal");
   console.log(attractions);
-  modal.querySelector("h2").textContent = `${attractions.navn}`;
-  modal.querySelector(".beskrivelse").textContent = `${attractions.paragraf}`;
-  modal.querySelector("img").src = "images/" + attractions.billede;
-  modal.querySelector(".adresse").textContent =
-    "adresse: " + attractions.adresse + ",-";
+
+  modal.querySelector(".modal_bynavn").textContent = attractions.navne;
+  modal.querySelector(".luk_knap").src = "images/ikoner/lukpopup.svg";
+  modal.querySelector(".modal_img").src = "images/" + attractions.billede;
+  // modal.querySelector(".bynavn_overskrift").textContent =
+  //   attractions.byoverskrift;
+  modal.querySelector(".paragraf").textContent = attractions.paragraf;
+  modal.querySelector(".adresse").textContent = attractions.adresse;
   modal.style.display = "block";
 }
 
