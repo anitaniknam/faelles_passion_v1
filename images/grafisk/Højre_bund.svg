@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="484" viewBox="0 0 700 484">
+  <defs>
+    <clipPath id="clip-Højre_bund">
+      <rect width="700" height="484"/>
+    </clipPath>
+  </defs>
+  <g id="Højre_bund" clip-path="url(#clip-Højre_bund)">
+    <rect width="700" height="484" fill="#ecebe2"/>
+    <line id="Line_14" data-name="Line 14" y1="174" x2="85" transform="translate(218.5 294.5)" fill="none" stroke="#707070" stroke-width="3"/>
+    <line id="Line_15" data-name="Line 15" x1="112" y2="242" transform="translate(303.5 52.5)" fill="none" stroke="#707070" stroke-width="3"/>
+    <line id="Line_16" data-name="Line 16" x1="67" y2="37" transform="translate(415.5 15.5)" fill="none" stroke="#707070" stroke-width="3"/>
+  </g>
+</svg>
