@@ -14,6 +14,10 @@
   font-size: 3rem;
 }
 
+.nav_kategori {
+  padding: 1rem;
+}
+
 .filtrer_by {
   text-align: center;
   background-color: var(--clr-secondary1);

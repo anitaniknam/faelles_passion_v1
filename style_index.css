@@ -5,6 +5,10 @@
   padding-bottom: 3rem;
 }
 
+.nav {
+  padding: 2rem;
+}
+
 nav a {
   text-align: center;
   background-color: var(--clr-secondary1);
