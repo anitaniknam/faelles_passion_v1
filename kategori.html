@@ -55,58 +55,141 @@
             </p>
           </li>
           <li>
-            <p class="filtrer_by" data-kategori="Indre by">INDRE BY</p>
+            <p class="filtrer_by" data-kategori="IndreBy">INDRE BY</p>
           </li>
         </ul>
       </nav>
     </header>
-
-    <section id="kategori_first_section">
-      <div>
-        <div class="first_section_wrapper">
-          <a class="logo_grid" href="index.html">
-            <img src="images/ikoner/logo.svg" alt="Logo"
-          /></a>
-          <h1 class="h1_grid">KNOW YOUR CITY</h1>
-          <h2 class="h2_skift">KØBENHAVN</h2>
+    <main>
+      <section id="kategori_first_section">
+        <div>
+          <div class="first_section_wrapper">
+            <a class="logo_grid" href="index.html">
+              <img src="images/ikoner/logo.svg" alt="Logo"
+            /></a>
+            <h1 class="h1_grid">KNOW YOUR CITY</h1>
+            <h2 class="h2_skift">ALLE BYDELE</h2>
+          </div>
+          <hr class="first_section_hr" />
+          <p class="skift_kategoritekst">
+            <span class="alle hide"
+              >København er Danmarks hovedstad og er med ca. 1.340.000
+              indbyggere landets største byområde omfattende 18 kommuner eller
+              dele heraf. Du bliver her hjulpet på vej til de fedeste oplevelser
+              i nogle af byens mest kendte områder. København gemmer på mange
+              "upcoming" steder og små firnurlige, eventyrlige opdagelser, som
+              vi er sikre på vil overraske dig!
+            </span>
+            <span class="Østerbro hide"
+              >Det store Østerbro er kendt for sit velhavende,
+              familieorienterede lokalsamfund. Eksklusive butikker med dansk
+              design og trendy restauranter ligger langs Østerbrogade og
+              sidegaderne. I nærheden er nationalstadionet, Parken, hjemsted for
+              fodboldholdet FC København og grænser op til Fælledparken, der er
+              en stor park med legeområder og sportsbaner. Stien rundt om
+              Sortedamssøen er populær blandt løbere og cyklister.</span
+            >
+            <span class="Vesterbro hide"
+              >Det hippe Vesterbros travle hovedgade, Vesterbrogade, byder på
+              utraditionelle butikker, kunstgallerier og barer. I det populære
+              område Kødbyen finder man kunstgallerier som Galleri Bo Bjerggaard
+              og V1 Gallery samt restauranter, der serverer international og ny
+              nordisk mad. På bryggeriet Carlsberg kan gæster få rundvisninger,
+              smage på Danmarks signaturøl og beundre de enorme
+              elefantstatuer.</span
+            >
+            <span class="Nørrebro hide"
+              >Nørrebro er et tjekket, multikulturelt kvarter, som er populært
+              hos studerende og kreative typer. Kebabsteder og indiebutikker
+              ligger side om side på hovedgaden, Nørrebrogade, og aftenåbne
+              barer putter sig langs sidegaderne. Madelskere tager til
+              Jægersborggade for at besøge eksklusive spisesteder og smarte
+              kaffebarer. I nærheden finder man de grønne stier på Assistens
+              Kirkegård, som snor sig forbi prominente grave som H.C. Andersens
+              og Søren Kierkegaards.</span
+            >
+            <span class="IndreBy hide"
+              >Den kompakte Indre By er Københavns travle centrum og hjerte,
+              hvor spisesteder i verdensklasse ligger dør om dør med god
+              shopping, museer og royale attraktioner. Området omfatter Nyhavn
+              med sine gamle både, farverige huse og fiskerestauranter samt
+              Strøget - den lange gågade med fornemme forretninger og
+              indie-butikker. Men den største oplevelse af alle er muligvis den
+              autentiske københavnerånd, som fylder de små gader.</span
+            >
+            <span class="Frederiksberg hide"
+              >I det grønne beboelsesområde Frederiksberg slapper de lokale af i
+              haverne omkring Frederiksberg Slot, der er opført i italiensk
+              stil. Gammel Kongevej er et knudepunkt for eksklusiv design- og
+              tøjshopping, mens caféer og gourmetbutikker ligger side om side på
+              den charmerende Værnedamsvej. Familier valfarter til Københavns
+              Zoo i nærheden for at besøge elefanthuset og den arktiske zone med
+              isbjørne og sæler.</span
+            >
+          </p>
         </div>
-        <hr class="first_section_hr" />
-        <p class="skift_kategoritekst"></p>
+      </section>
+
+      <!-- <img src="/images/ikoner/splashbillede.svg" alt="splashbillede" /> -->
+
+      <section id="kategori_second_section"></section>
+
+      <template id="template_byer">
+        <article class="template_article">
+          <h3 class="template_bynavn"></h3>
+          <img class="template_img" src="" alt="Billede af valgte bydel" />
+        </article>
+      </template>
+
+      <aside id="modal">
+        <article class="modal_attraktion">
+          <div class="modal_attraktion_boks">
+            <div class="modal_upper">
+              <h3 class="modal_bynavn"></h3>
+              <img class="luk_knap" src="" alt="Lukknap til artikel" />
+            </div>
+            <hr class="modal_hr" />
+            <div class="modal_lower">
+              <div>
+                <img class="modal_img" src="" alt="Billede af valgte bydel" />
+              </div>
+              <div>
+                <!-- <h4 class="bynavn_overskrift"></h4> -->
+                <p class="paragraf"></p>
+                <p class="adresse"></p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <div class="footer_grid">
+        <div>
+          <ul>
+            <li>Nørrebro</li>
+            <li>Vesterbro</li>
+            <li>Østerbro</li>
+            <li>Indre by</li>
+            <li>Frederiksberg</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Kontakt:</li>
+            <li>Tlf: 20304030</li>
+            <li>Mail: knowyourcity@hotmail.com</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Find og følg os på SoMe</li>
+            <li>*indsæt ikon af Instagram</li>
+            <li>*indsæt ikon af Facebook</li>
+          </ul>
+        </div>
       </div>
-    </section>
-
-    <!-- <img src="/images/ikoner/splashbillede.svg" alt="splashbillede" /> -->
-
-    <section id="kategori_second_section"></section>
-
-    <template id="template_byer">
-      <article class="template_article">
-        <h3 class="template_bynavn"></h3>
-        <img class="template_img" src="" alt="Billede af valgte bydel" />
-      </article>
-    </template>
-
-    <aside id="modal">
-      <article class="modal_attraktion">
-        <div class="modal_attraktion_boks">
-          <div class="modal_upper">
-            <h3 class="modal_bynavn"></h3>
-            <img class="luk_knap" src="" alt="Lukknap til artikel" />
-          </div>
-          <hr class="modal_hr" />
-          <div class="modal_lower">
-            <div>
-              <img class="modal_img" src="" alt="Billede af valgte bydel" />
-            </div>
-            <div>
-              <!-- <h4 class="bynavn_overskrift"></h4> -->
-              <p class="paragraf"></p>
-              <p class="adresse"></p>
-            </div>
-          </div>
-        </div>
-      </article>
-    </aside>
+    </footer>
     <script src="js.js"></script>
   </body>
 </html>

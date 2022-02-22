@@ -57,6 +57,15 @@ function filtrerByer() {
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
 
+  console.log(filter);
+
+  let kategoritekster = document.querySelectorAll(".skift_kategoritekst span");
+  kategoritekster.forEach((kategoritekst) => {
+    kategoritekst.classList.add("hide");
+  });
+
+  document.querySelector(`.${filter}`).classList.remove("hide");
+
   visByer();
 
   header.textContent = this.textContent;
