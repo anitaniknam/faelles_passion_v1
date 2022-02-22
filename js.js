@@ -53,7 +53,7 @@ function start() {
 function filtrerByer() {
   console.log(this);
 
-  const byKategoritekst = document.querySelector(".first_section_p");
+  const byKategoritekst = document.querySelector(".skift_kategoritekst");
   byKategoritekst.textContent = "";
   filter = this.dataset.kategori;
   document.querySelector(".valgt").classList.remove("valgt");
@@ -67,7 +67,7 @@ function filtrerByer() {
 function visByer() {
   console.log("Byer loaded");
 
-  const container = document.querySelector("#second_section");
+  const container = document.querySelector("#kategori_second_section");
   const byTemplate = document.querySelector("#template_byer");
   container.textContent = "";
 
