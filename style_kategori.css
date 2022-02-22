@@ -1,0 +1,146 @@
+#kategori_first_section {
+  width: 75%;
+  min-height: 70vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.h2_skift {
+  grid-column: 5 / 8;
+  grid-row: 2;
+
+  color: #952619;
+  font-family: "poppins", sans-serif;
+  font-size: 3rem;
+}
+
+.filtrer_by {
+  text-align: center;
+  background-color: var(--clr-secondary1);
+  /* flex-basis: 15%; */
+  /* margin: 3em 0 0 1.5em; */
+  padding: 1rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.filtrer_by {
+  text-transform: capitalize;
+  color: var(--clr-primary2);
+  font-family: var(--ff-p);
+}
+
+.filtrer_by:hover {
+  color: var(--clr-accent);
+}
+
+.valgt {
+  background-color: var(--clr-primary1);
+  color: var(--clr-accent);
+}
+
+#kategori_second_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+  width: 85%;
+}
+
+.template_article {
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+}
+
+.template_img {
+  width: 98%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.template_img:hover {
+  width: 100%;
+  opacity: 0.7;
+}
+
+.container {
+  background-color: #ecebe2;
+}
+
+.template_bynavn {
+  font-family: var(--ff-p);
+  color: var(--clr-primary2);
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+#modal {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: none;
+  position: fixed;
+  overflow: scroll;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal_attraktion {
+  margin-top: 5rem;
+  background-color: var(--clr-secondary2);
+  width: 80vw;
+  height: 80vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.modal_attraktion_boks {
+  width: 70vw;
+}
+
+.modal_upper {
+  display: flex;
+}
+
+.modal_bynavn {
+  font-family: var(--ff-p);
+  color: var(--clr-primary1);
+  font-size: 2rem;
+}
+
+.luk_knap {
+  width: 8%;
+  cursor: pointer;
+  background: transparent;
+}
+
+.modal_hr {
+  color: var(--clr-secondary3);
+}
+
+.modal_lower {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.modal_img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.paragraf {
+  grid-column: 2;
+  font-family: var(--ff-p);
+}
+
+.adresse {
+  grid-column: 2;
+  font-family: var(--ff-p);
+  padding-top: 1rem;
+}

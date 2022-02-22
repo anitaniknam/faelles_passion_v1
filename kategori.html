@@ -4,27 +4,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-
-    </style>
-
-    <title>Forside Know your city</title>
+    <link rel="stylesheet" href="style_kategori.css" />
+    <link rel="stylesheet" href="style_faelles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="images/ikoner/logo.svg" />
+    <title>Know your city</title>
   </head>
   <body>
-
-    <header>
+    <header class="banner">
+      <div id="banner_mobile">
+        <div>
+          <img
+            class="menu_burger toggle-btn"
+            src="images/ikoner/burgermenu.svg"
+            alt="Burgermenu-ikon"
+          />
+        </div>
+        <div>
+          <!-- <a href="index.html"> -->
+          <img
+            class="menu_logo toggle-btn"
+            src="images/ikoner/logo.svg"
+            alt="Logo"
+          />
+          <!-- </a> -->
+        </div>
+      </div>
       <nav>
-        <button data-kategori="alle" class="valgt">ALLE BYDELENE</button>
-        <button data-kategori="forretter">NØRREBRO</button>
-        <button data-kategori="hovedretter">VESTERBRO</button>
-        <button data-kategori="sideorders">ØSTERBRO</button>
-        <button data-kategori="desserter">FREDERIKSBERG</button>
-        <button data-kategori="drikkevarer">INDRE BY</button>
+        <ul>
+          <li>
+            <p class="filtrer_by valgt" data-kategori="alle">ALLE BYDELE</p>
+          </li>
+          <li>
+            <p class="filtrer_by" data-kategori="Nørrebro">NØRREBRO</p>
+          </li>
+          <li>
+            <p class="filtrer_by" data-kategori="Vesterbro">VESTERBRO</p>
+          </li>
+          <li>
+            <p class="filtrer_by" data-kategori="Østerbro">ØSTERBRO</p>
+          </li>
+          <li>
+            <p class="filtrer_by" data-kategori="Frederiksberg">
+              FREDERIKSBERG
+            </p>
+          </li>
+          <li>
+            <p class="filtrer_by" data-kategori="Indre by">INDRE BY</p>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <h1>KNOW YOUR CITY</h1>
-    <h2>KØBENHAVN</h2>
+    <section id="kategori_first_section">
+      <div>
+        <div class="first_section_wrapper">
+          <img class="logo_grid" src="images/ikoner/logo.svg" alt="Logo" />
+          <h1 class="h1_grid">KNOW YOUR CITY</h1>
+          <h2 class="h2_skift">KØBENHAVN</h2>
+        </div>
+        <hr class="first_section_hr" />
+        <p class="skift_kategoritekst"></p>
+      </div>
+    </section>
+
+    <!-- <img src="/images/ikoner/splashbillede.svg" alt="splashbillede" /> -->
+
+    <section id="kategori_second_section"></section>
+
+    <template id="template_byer">
+      <article class="template_article">
+        <h3 class="template_bynavn"></h3>
+        <img class="template_img" src="" alt="Billede af valgte bydel" />
+      </article>
+    </template>
+
+    <aside id="modal">
+      <article class="modal_attraktion">
+        <div class="modal_attraktion_boks">
+          <div class="modal_upper">
+            <h3 class="modal_bynavn"></h3>
+            <img class="luk_knap" src="" alt="Lukknap til artikel" />
+          </div>
+          <hr class="modal_hr" />
+          <div class="modal_lower">
+            <div>
+              <img class="modal_img" src="" alt="Billede af valgte bydel" />
+            </div>
+            <div>
+              <!-- <h4 class="bynavn_overskrift"></h4> -->
+              <p class="paragraf"></p>
+              <p class="adresse"></p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </aside>
     <script src="js.js"></script>
   </body>
 </html>

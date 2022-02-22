@@ -8,7 +8,7 @@
   --clr-primary1: #962619;
   --clr-primary2: #0c0440;
   --clr-secondary1: #a9d0da;
-  --clr-secondary2: #ecebe2;
+  --clr-secondary2: #f1ecdd;
   --clr-secondary3: #71cca0;
   --clr-accent: snow;
   --ff-h: "permanent marker", sans-serif;
@@ -49,7 +49,11 @@ nav.shown .menu_logo {
   display: none;
 }
 
-@media (max-width: 600px) {
+.banner a {
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
   nav {
     display: none;
   }
@@ -99,9 +103,51 @@ footer {
 
 ul {
   list-style: none;
+  text-decoration: none;
 }
 
 .footer_grid {
   display: flex;
   justify-content: space-between;
+}
+
+.first_section_wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.logo_grid {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+
+  width: 100%;
+}
+
+.h1_grid {
+  grid-column: 3 / 8;
+  grid-row: 1;
+
+  color: #0c0440;
+  font-size: 4.125rem;
+  font-family: "permanent marker";
+}
+
+.h2_grid {
+  grid-column: 5 / 8;
+  grid-row: 2;
+
+  color: #952619;
+  font-family: "poppins", sans-serif;
+  font-size: 3rem;
+}
+
+.first_section_hr {
+  color: var(--clr-secondary3);
+  margin-bottom: 2rem;
+}
+
+.first_section_p {
+  max-width: 75ch;
+  font-family: var(--ff-p);
+  color: var(--clr-primary2);
 }
