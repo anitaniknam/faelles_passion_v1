@@ -5,6 +5,15 @@
   padding-bottom: 5rem;
 }
 
+.h2_skift {
+  grid-column: 5 / 8;
+  grid-row: 2;
+
+  color: #952619;
+  font-family: "poppins", sans-serif;
+  font-size: 3rem;
+}
+
 .filtrer_by {
   text-align: center;
   background-color: var(--clr-secondary1);
@@ -16,7 +25,7 @@
   transition: 0.2s ease;
 }
 
-.filtrer_by a {
+.filtrer_by {
   text-transform: capitalize;
   color: var(--clr-primary2);
   font-family: var(--ff-p);

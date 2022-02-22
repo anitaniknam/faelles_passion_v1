@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", start);
 
 let attraktioner;
 let filter = "alle";
-const header = document.querySelector(".h2_grid");
+const header = document.querySelector(".h2_skift");
 
 function start() {
   console.log("Site startet");
@@ -53,8 +53,6 @@ function start() {
 function filtrerByer() {
   console.log(this);
 
-  const byKategoritekst = document.querySelector(".skift_kategoritekst");
-  byKategoritekst.textContent = "";
   filter = this.dataset.kategori;
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
@@ -70,6 +68,9 @@ function visByer() {
   const container = document.querySelector("#kategori_second_section");
   const byTemplate = document.querySelector("#template_byer");
   container.textContent = "";
+
+  // const byKategoritekst = document.querySelector(".skift_kategoritekst");
+  // byKategoritekst.textContent = attractions.byKategoritekst;
 
   attraktioner.forEach((attractions) => {
     if (filter == attractions.kategori || filter == "alle") {

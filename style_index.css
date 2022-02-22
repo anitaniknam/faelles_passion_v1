@@ -19,6 +19,27 @@
   background-color: rgb(5, 44, 32);
 } */
 
+.style_knap {
+  text-align: center;
+  background-color: var(--clr-secondary1);
+  /* flex-basis: 15%; */
+  /* margin: 3em 0 0 1.5em; */
+  padding: 1rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.style_knap a {
+  text-transform: capitalize;
+  color: var(--clr-primary2);
+  font-family: var(--ff-p);
+}
+
+.style_knap a:hover {
+  color: var(--clr-accent);
+}
+
 @media (max-width: 600px) {
   .logo_grid {
     display: none;
@@ -35,4 +56,19 @@
     grid-row: 2;
     font-size: 3rem;
   }
+}
+
+.h2_grid {
+  grid-column: 5 / 8;
+  grid-row: 2;
+
+  color: #952619;
+  font-family: "poppins", sans-serif;
+  font-size: 3rem;
+}
+
+.first_section_p {
+  max-width: 75ch;
+  font-family: var(--ff-p);
+  color: var(--clr-primary2);
 }
