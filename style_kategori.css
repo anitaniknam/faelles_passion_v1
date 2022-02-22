@@ -1,8 +1,8 @@
 #kategori_first_section {
   width: 75%;
   min-height: 70vh;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .h2_skift {
@@ -17,18 +17,13 @@
 .filtrer_by {
   text-align: center;
   background-color: var(--clr-secondary1);
-  /* flex-basis: 15%; */
-  /* margin: 3em 0 0 1.5em; */
+  color: var(--clr-primary2);
   padding: 1rem;
   border-radius: 1.25rem;
   cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.filtrer_by {
   text-transform: capitalize;
-  color: var(--clr-primary2);
   font-family: var(--ff-p);
+  transition: 0.2s ease;
 }
 
 .filtrer_by:hover {
@@ -148,4 +143,10 @@
 
 .hide {
   display: none;
+}
+
+.skift_kategoritekst {
+  max-width: 75ch;
+  font-family: var(--ff-p);
+  color: var(--clr-primary2);
 }
