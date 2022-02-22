@@ -57,6 +57,19 @@ function filtrerByer() {
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
 
+  console.log(filter);
+
+  // document.querySelector(".Nørrebro").classList.add("hide");
+  // document.querySelector(".Vesterbro").classList.add("hide");
+  let kategoritekster = document.querySelectorAll(".skift_kategoritekst span");
+  kategoritekster.forEach((kategoritekst) => {
+    kategoritekst.classList.add("hide");
+  });
+
+  document.querySelector(`.${filter}`).classList.remove("hide");
+
+  //document.querySelector("." + filter).classList.remove("hide");
+
   visByer();
 
   header.textContent = this.textContent;

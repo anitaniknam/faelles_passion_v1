@@ -145,3 +145,7 @@
   font-family: var(--ff-p);
   padding-top: 1rem;
 }
+
+.hide {
+  display: none;
+}
