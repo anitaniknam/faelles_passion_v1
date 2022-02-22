@@ -72,3 +72,11 @@
   font-family: var(--ff-p);
   color: var(--clr-primary2);
 }
+
+#index_second_section {
+  background-image: url(images/ikoner/splashbillede.svg);
+  background-size: cover;
+  aspect-ratio: 16 / 9;
+  width: 75%;
+  min-height: 70vh;
+}

@@ -60,53 +60,81 @@
         </ul>
       </nav>
     </header>
-
-    <section id="kategori_first_section">
-      <div>
-        <div class="first_section_wrapper">
-          <a class="logo_grid" href="index.html">
-            <img src="images/ikoner/logo.svg" alt="Logo"
-          /></a>
-          <h1 class="h1_grid">KNOW YOUR CITY</h1>
-          <h2 class="h2_skift">KØBENHAVN</h2>
+    <main>
+      <section id="kategori_first_section">
+        <div>
+          <div class="first_section_wrapper">
+            <a class="logo_grid" href="index.html">
+              <img src="images/ikoner/logo.svg" alt="Logo"
+            /></a>
+            <h1 class="h1_grid">KNOW YOUR CITY</h1>
+            <h2 class="h2_skift">KØBENHAVN</h2>
+          </div>
+          <hr class="first_section_hr" />
+          <p class="skift_kategoritekst"></p>
         </div>
-        <hr class="first_section_hr" />
-        <p class="skift_kategoritekst"></p>
+      </section>
+
+      <!-- <img src="/images/ikoner/splashbillede.svg" alt="splashbillede" /> -->
+
+      <section id="kategori_second_section"></section>
+
+      <template id="template_byer">
+        <article class="template_article">
+          <h3 class="template_bynavn"></h3>
+          <img class="template_img" src="" alt="Billede af valgte bydel" />
+        </article>
+      </template>
+
+      <aside id="modal">
+        <article class="modal_attraktion">
+          <div class="modal_attraktion_boks">
+            <div class="modal_upper">
+              <h3 class="modal_bynavn"></h3>
+              <img class="luk_knap" src="" alt="Lukknap til artikel" />
+            </div>
+            <hr class="modal_hr" />
+            <div class="modal_lower">
+              <div>
+                <img class="modal_img" src="" alt="Billede af valgte bydel" />
+              </div>
+              <div>
+                <!-- <h4 class="bynavn_overskrift"></h4> -->
+                <p class="paragraf"></p>
+                <p class="adresse"></p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <div class="footer_grid">
+        <div>
+          <ul>
+            <li>Nørrebro</li>
+            <li>Vesterbro</li>
+            <li>Østerbro</li>
+            <li>Indre by</li>
+            <li>Frederiksberg</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Kontakt:</li>
+            <li>Tlf: 20304030</li>
+            <li>Mail: knowyourcity@hotmail.com</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Find og følg os på SoMe</li>
+            <li>*indsæt ikon af Instagram</li>
+            <li>*indsæt ikon af Facebook</li>
+          </ul>
+        </div>
       </div>
-    </section>
-
-    <!-- <img src="/images/ikoner/splashbillede.svg" alt="splashbillede" /> -->
-
-    <section id="kategori_second_section"></section>
-
-    <template id="template_byer">
-      <article class="template_article">
-        <h3 class="template_bynavn"></h3>
-        <img class="template_img" src="" alt="Billede af valgte bydel" />
-      </article>
-    </template>
-
-    <aside id="modal">
-      <article class="modal_attraktion">
-        <div class="modal_attraktion_boks">
-          <div class="modal_upper">
-            <h3 class="modal_bynavn"></h3>
-            <img class="luk_knap" src="" alt="Lukknap til artikel" />
-          </div>
-          <hr class="modal_hr" />
-          <div class="modal_lower">
-            <div>
-              <img class="modal_img" src="" alt="Billede af valgte bydel" />
-            </div>
-            <div>
-              <!-- <h4 class="bynavn_overskrift"></h4> -->
-              <p class="paragraf"></p>
-              <p class="adresse"></p>
-            </div>
-          </div>
-        </div>
-      </article>
-    </aside>
+    </footer>
     <script src="js.js"></script>
   </body>
 </html>
