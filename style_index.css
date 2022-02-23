@@ -3,6 +3,9 @@
   min-height: 70vh;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-image: url(images/grafisk/venstre_top.svg);
+  background-size: cover;
+  aspect-ratio: 16 / 9;
 }
 
 .nav {

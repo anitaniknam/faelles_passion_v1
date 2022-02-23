@@ -62,6 +62,10 @@ nav.shown .menu_logo {
     cursor: pointer;
   }
 
+  .logo_grid {
+    display: none;
+  }
+
   nav.shown {
     display: flex;
     justify-content: flex-start;
