@@ -3,9 +3,9 @@
   min-height: 70vh;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-image: url(images/grafisk/venstre_top.svg);
+  /* background-image: url(images/grafisk/venstre_top.svg);
   background-size: cover;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 9; */
 }
 
 .nav {
@@ -31,6 +31,58 @@ nav a:hover {
   color: var(--clr-accent);
 }
 
+.h2_grid {
+  grid-column: 5 / 8;
+  grid-row: 2;
+
+  color: #952619;
+  font-family: "poppins", sans-serif;
+  font-size: 3rem;
+}
+
+.index_first_section_p {
+  max-width: 75ch;
+  font-family: var(--ff-p);
+  color: var(--clr-primary2);
+}
+
+#index_second_section {
+  background-image: url(images/ikoner/splashbillede.svg);
+  background-size: cover;
+  aspect-ratio: 16 / 9;
+  width: 75%;
+  min-height: 70vh;
+  margin-bottom: 3rem;
+}
+
+.index_first_section_wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.logo_grid {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .h1_grid {
+    grid-column: 3 / 8;
+    grid-row: 1;
+
+    color: #0c0440;
+    font-size: 4.125rem;
+    font-family: "permanent marker";
+  }
+}
+
+.index_first_section_hr {
+  color: var(--clr-secondary3);
+  margin-bottom: 3rem;
+}
+
 @media (max-width: 600px) {
   .logo_grid {
     display: none;
@@ -47,28 +99,4 @@ nav a:hover {
     grid-row: 2;
     font-size: 3rem;
   }
-}
-
-.h2_grid {
-  grid-column: 5 / 8;
-  grid-row: 2;
-
-  color: #952619;
-  font-family: "poppins", sans-serif;
-  font-size: 3rem;
-}
-
-.first_section_p {
-  max-width: 75ch;
-  font-family: var(--ff-p);
-  color: var(--clr-primary2);
-}
-
-#index_second_section {
-  background-image: url(images/ikoner/splashbillede.svg);
-  background-size: cover;
-  aspect-ratio: 16 / 9;
-  width: 75%;
-  min-height: 70vh;
-  margin-bottom: 3rem;
 }

@@ -112,29 +112,3 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-
-.first_section_wrapper {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.logo_grid {
-  grid-column: 1 / 3;
-  grid-row: 1 / 3;
-
-  width: 100%;
-}
-
-.h1_grid {
-  grid-column: 3 / 8;
-  grid-row: 1;
-
-  color: #0c0440;
-  font-size: 4.125rem;
-  font-family: "permanent marker";
-}
-
-.first_section_hr {
-  color: var(--clr-secondary3);
-  margin-bottom: 3rem;
-}
