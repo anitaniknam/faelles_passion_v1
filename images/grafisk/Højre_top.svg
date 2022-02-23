@@ -5,8 +5,8 @@
     </clipPath>
   </defs>
   <g id="Højre_top" clip-path="url(#clip-Højre_top)">
-    <rect width="700" height="484" fill="#ecebe2"/>
-    <line id="Line_22" data-name="Line 22" x2="46" y2="116" transform="translate(121.5 83.5)" fill="none" stroke="#707070" stroke-width="3"/>
-    <line id="Line_23" data-name="Line 23" x1="412" y1="202" transform="translate(167.5 199.5)" fill="none" stroke="#707070" stroke-width="3"/>
+    <rect width="700" height="484" fill="#f1ecdd"/>
+    <line id="Line_22" data-name="Line 22" x2="46" y2="116" transform="translate(243)" fill="none" stroke="#0c0440" stroke-width="3"/>
+    <line id="Line_23" data-name="Line 23" x1="412" y1="202" transform="translate(288 115)" fill="none" stroke="#0c0440" stroke-width="3"/>
   </g>
 </svg>

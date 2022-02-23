@@ -5,10 +5,10 @@
     </clipPath>
   </defs>
   <g id="venstre_top" clip-path="url(#clip-venstre_top)">
-    <rect width="700" height="484" fill="#ecebe2"/>
+    <rect width="700" height="484" fill="#f1ecdd"/>
     <g id="Layer_2" data-name="Layer 2" transform="matrix(-0.407, 0.914, -0.914, -0.407, 723.352, 23.698)">
       <g id="Layer_1" data-name="Layer 1" transform="translate(1.6 3.001)">
-        <path id="Path_12" data-name="Path 12" d="M1.6,56.321C122.091-19.939,275.748-13.654,383.412,70.4c93.1,72.669,138.719,193.238,119.646,313.349L707.16,501.7" transform="translate(-1.6 -3.001)" fill="none" stroke="#8f8f8d" stroke-miterlimit="10" stroke-width="3"/>
+        <path id="Path_12" data-name="Path 12" d="M1.6,56.321C122.091-19.939,275.748-13.654,383.412,70.4c93.1,72.669,138.719,193.238,119.646,313.349L707.16,501.7" transform="translate(-1.6 -3.001)" fill="none" stroke="#0c0440" stroke-miterlimit="10" stroke-width="3"/>
       </g>
     </g>
   </g>
