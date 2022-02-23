@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-_3">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="_3" data-name="3" clip-path="url(#clip-_3)">
+    <rect width="1920" height="1080" fill="#f1ecdd"/>
+    <g id="Group_15" data-name="Group 15">
+      <line id="Line_12" data-name="Line 12" x2="246" y2="2" transform="translate(0.5 871.5)" fill="none" stroke="#707070" stroke-width="3"/>
+      <line id="Line_13" data-name="Line 13" x1="128" y1="207" transform="translate(246.5 873.5)" fill="none" stroke="#707070" stroke-width="3"/>
+      <line id="Line_14" data-name="Line 14" y1="174" x2="85" transform="translate(1656.5 906.5)" fill="none" stroke="#707070" stroke-width="3"/>
+      <line id="Line_15" data-name="Line 15" x1="112" y2="242" transform="translate(1741.5 664.5)" fill="none" stroke="#707070" stroke-width="3"/>
+      <line id="Line_16" data-name="Line 16" x1="67" y2="37" transform="translate(1853.5 627.5)" fill="none" stroke="#707070" stroke-width="3"/>
+      <g id="Layer_2" data-name="Layer 2" transform="matrix(-0.407, 0.914, -0.914, -0.407, 723.352, 23.698)">
+        <g id="Layer_1" data-name="Layer 1" transform="translate(1.6 3.001)">
+          <path id="Path_12" data-name="Path 12" d="M1.6,56.321C122.091-19.939,275.748-13.654,383.412,70.4c93.1,72.669,138.719,193.238,119.646,313.349L707.16,501.7" transform="translate(-1.6 -3.001)" fill="none" stroke="#8f8f8d" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+      </g>
+      <line id="Line_17" data-name="Line 17" x2="46" y2="116" transform="translate(1462.5 0.5)" fill="none" stroke="#707070" stroke-width="3"/>
+      <line id="Line_18" data-name="Line 18" x1="412" y1="202" transform="translate(1508.5 116.5)" fill="none" stroke="#707070" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
