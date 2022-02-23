@@ -46,17 +46,17 @@ nav a:hover {
   margin-bottom: 3rem;
 }
 
-.index_first_section_wrapper {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
-
 .index_first_section_hr {
   color: var(--clr-secondary3);
   margin-bottom: 3rem;
 }
 
 @media (min-width: 600px) {
+  .index_first_section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
   .logo_grid {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
